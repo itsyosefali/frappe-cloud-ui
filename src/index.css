@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Customizes the entire scrollbar */
+::-webkit-scrollbar {
+    width: 2px; /* width of the vertical scrollbar */
+    height: 2px; /* height of the horizontal scrollbar */
+}
+
+/* Customizes the track (part the thumb slides within) */
+::-webkit-scrollbar-track {
+    background: transparent; /* optional: just to make sure the track is invisible */
+}
+
+/* Customizes the thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: black; /* color of the thumb */
+    border-radius: 1px; /* roundness of the thumb */
+}
+
+/* Optional: styles the thumb when it's being hovered or clicked */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* darker color on hover */
+}
