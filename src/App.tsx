@@ -7,6 +7,7 @@ import Billing from './pages/Billing';
 import Sites from './pages/Sites';
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ function App() {
   };
 
   return (
+    <ThemeProvider>
     <div className="min-h-screen bg-gray-50">
       <Routes>
         {/* Auth routes */}
@@ -43,6 +45,7 @@ function App() {
         />
       </Routes>
     </div>
+    </ThemeProvider>
   );
 }
 
