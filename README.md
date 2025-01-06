@@ -1,4 +1,4 @@
-# SASS Manager Dashboard
+# frappe-cloud-ui
 
 A modern, responsive dashboard for managing SASS applications with billing, sites, and user management capabilities.
 
