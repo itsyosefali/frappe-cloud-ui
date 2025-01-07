@@ -29,7 +29,7 @@ const InvoiceFilters = ({
           placeholder="Search invoices..."
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="pl-10 w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-blue-500 focus:ring-blue-500"
+          className="pl-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-2 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:border-blue-500 focus:ring-blue-500"
         />
       </div>
       
@@ -37,7 +37,7 @@ const InvoiceFilters = ({
         <Select
           value={status}
           onChange={(e) => onStatusChange(e.target.value)}
-          className="w-full md:w-40"
+          className="w-full md:w-40 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
         >
           <option value="">All Status</option>
           <option value="paid">Paid</option>
@@ -49,7 +49,7 @@ const InvoiceFilters = ({
           <Select
             value={dateRange}
             onChange={(e) => onDateRangeChange(e.target.value)}
-            className="w-full md:w-48 pl-9"
+            className="w-full md:w-48 pl-9 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
           >
             <option value="">All Time</option>
             <option value="today">Today</option>

@@ -6,7 +6,7 @@ interface DashboardLayoutProps {
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   return (
-    <main className="pt-16 md:pl-64 min-h-screen bg-gray-50">
+    <main className="pt-16 md:pl-64 min-h-screen bg-gray-50 dark:bg-gray-900">
       <div className="p-6">
         {children}
       </div>
